@@ -1,0 +1,26 @@
+endpoints:
+  GET - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos
+  POST - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos
+  PATCH - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos/{todoId}
+  PUT - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos/{todoId}
+  DELETE - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos/{todoId}
+  POST - https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev/todos/{todoId}/attachment
+functions:
+  Auth: todo-app-serverless-dev-Auth (11 MB)
+  GetTodos: todo-app-serverless-dev-GetTodos (11 MB)
+  CreateTodo: todo-app-serverless-dev-CreateTodo (11 MB)
+  UpdateTodo: todo-app-serverless-dev-UpdateTodo (11 MB)
+  DeleteTodo: todo-app-serverless-dev-DeleteTodo (11 MB)
+  GenerateUploadUrl: todo-app-serverless-dev-GenerateUploadUrl (11 MB)
+
+Stack Outputs:
+  AuthLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-Auth:1
+  GenerateUploadUrlLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-GenerateUploadUrl:1
+  UpdateTodoLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-UpdateTodo:1
+  GetTodosLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-GetTodos:2
+  DeleteTodoLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-DeleteTodo:1
+  EnterpriseLogAccessIamRole: arn:aws:iam::460517839666:role/todo-app-serverless-dev-EnterpriseLogAccessIamRole-70Z2RVLMYURG
+  CreateTodoLambdaFunctionQualifiedArn: arn:aws:lambda:us-east-2:460517839666:function:todo-app-serverless-dev-CreateTodo:1
+  ServiceEndpoint: https://dpa0fxymul.execute-api.us-east-2.amazonaws.com/dev
+  ServerlessDeploymentBucketName: todo-app-serverless-dev-serverlessdeploymentbucke-11h8t4bb50fmk
+
